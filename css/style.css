@@ -1,8 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiny5&display=swap');
 body{
-    background-color: rgb(178, 222, 222);
+    background-color: rgb(85, 160, 160);
+}
+:root{/*sirve para cambiar colores en toda la pagina web en vez de ir uno por uno*/
+    --color-primario: rgb(39, 110, 82);
+    --color-secundario: blue;
+    --color-terciarip: pink;
+    --color-blanco: white;
 }
 h1{
     text-align: center;
-    color: cadetblue;
+    color: var(--color-primario);
     font-size: 50px;
-}
+}/*padre*/
+.flex__container{
+    background-color: rgb(76, 152, 114);
+    border: solid black 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 30px;
+
+
+}/*hijos*/
+.box__1{
+    background-color: var(--color-primario);
+    background: linear-gradient(to bottom, rgb(183, 207, 183), #51c78c7d), url("https://media.istockphoto.com/id/1611922462/es/foto/vista-a%C3%A9rea-del-r%C3%ADo-en-el-bosque-de-manglares-verdes-y-colina-de-piedra-caliza-en-la-bah%C3%ADa-de.jpg?s=612x612&w=0&k=20&c=gCzDHHxWH3D3VopicaLV5Vji11J4C2I0n6k5UMbxo54=") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid black 5px;
+    color: var(--color-blanco);
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    
+ }
+ .box__2{
+    background-color: var(--color-secundario);
+    background: linear-gradient(to bottom, rgb(183, 207, 183), #51c78c7d), url("https://media.istockphoto.com/id/1146185334/es/foto/vista-a%C3%A9rea-amplia-tiro-hermoso-paisaje-atardecer-mar-tropical-playa-en-el-sur-de-tailandia.jpg?s=612x612&w=0&k=20&c=Womp_mLwvso8-XofWTiKPq4pqV80I61vdteRh65-kSU=") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid black 5px;
+    color: var(--color-blanco);
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+ }
+ .box__3{
+    background-color: var(--color-primario);
+    background: linear-gradient(to bottom, rgb(183, 207, 183), #51c78c7d), url("https://media.istockphoto.com/id/1615877894/es/foto/vista-a%C3%A9rea-con-drones-del-panorama-del-atardecer-del-r%C3%ADo-de-la-bah%C3%ADa-de-phang-nga-y-el-parque.jpg?s=612x612&w=0&k=20&c=u5yvsQ9nriLASlVLWPhz9Ko6L0ng-uRN8YbhsGEbmf8=") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid black 5px;
+    color: var(--color-blanco);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    
+
+ }
+ .box__4{
+    background-color: var(--color-secundario);
+    background: linear-gradient(to bottom, rgb(183, 207, 183), #51c78c7d),url("https://media.istockphoto.com/id/1159845076/es/foto/vista-a%C3%A9rea-de-tiro-ancho-mar-de-la-hermosa-playa-tropical-al-atardecer-en-asia-del-sur-de.jpg?s=612x612&w=0&k=20&c=Ev23Sn2OMlbwu4C3NzfRbXOnwFP5YWwWZyIR3aTLlxk=") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid black 5px;
+    color: var(--color-blanco);
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
+ }
